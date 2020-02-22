@@ -22,6 +22,10 @@ import TrailerScreen from "views/TrailerScreen.jsx";
 import TruckScreen from "views/TruckScreen.jsx";
 import Maps from "views/Map.jsx";
 import UserScreen from "views/UserScreen.jsx";
+import FormScreen from "views/FormScreen.jsx";
+import ComingSoonScreen from "views/ComingSoonScreen.jsx";
+import SignInForm from "views/SignInForm.jsx";
+
 
 var routes = [
   {
@@ -54,16 +58,37 @@ var routes = [
   },
   {
     path: "/tables",
-    name: "Truck",
+    name: "Trucks",
     icon: "nc-icon nc-delivery-fast",
     component: TruckScreen,
     layout: "/admin"
   },
   {
     path: "/typography",
-    name: "Trailer",
+    name: "Trailers",
     icon: "nc-icon nc-delivery-fast",
     component: TrailerScreen,
+    layout: "/admin"
+  },
+  {
+    path: "/form",
+    name: "Forms",
+    icon: "nc-icon nc-single-copy-04",
+    component: FormScreen,
+    layout: "/admin"
+  },
+  {
+    path: "/comingsoon",
+    name: "Coming Soon",
+    icon: "nc-icon nc-bulb-63",
+    component: ComingSoonScreen,
+    layout: "/admin"
+  },
+  {
+    path: "/signinform",
+    name: "Sign In",
+    icon: "nc-icon nc-bulb-63",
+    component: SignInForm,
     layout: "/admin"
   }
 ];
