@@ -22,7 +22,7 @@ import { Nav } from "reactstrap";
 // javascript plugin used to create scrollbars on windows
 import PerfectScrollbar from "perfect-scrollbar";
 
-import logo from "logo.svg";
+import logo from "dashLogo.svg";
 
 var ps;
 
@@ -62,14 +62,14 @@ class Sidebar extends React.Component {
             className="simple-text logo-mini"
           >
             <div className="logo-img">
-              <img src={logo} alt="react-logo" />
+              <img src={logo} alt="logo" />
             </div>
           </a>
           <a
            
             className="simple-text logo-normal"
           >
-            Dvir Dashboard
+            Justdrive 
           </a>
         </div>
         <div className="sidebar-wrapper" ref={this.sidebar}>
